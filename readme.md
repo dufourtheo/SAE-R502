@@ -20,7 +20,7 @@ Ce projet vise à automatiser certaines tâches liées à la gestion des contene
 1. Cloner le dépôt GitHub :
 
 ```
-git clone https://github.com/votre-utilisateur/projet-sae-r502.git
+git clone https://github.com/dufourtheo/SAE-R502.git
 ```
 
 2. Construire et lancer le conteneur Docker de l'API :
@@ -35,20 +35,20 @@ docker run -d -p 8080:8080 mon-api
 
 ```
 cd projet-sae-r502/symfony
-symfony serve
+symfony server:start -d
 ```
 
 4. Visiter http://localhost:8000 dans votre navigateur pour accéder à l'interface et utiliser le formulaire pour insérer le nom de l'image associée au challenge.
 
 ## Captures d'écran
 
-- [Capture d'écran de l'interface Symfony avec le formulaire](img/Formulaire.gif)
-- [Capture d'écran coté DB](img/screendb.png)
+- ![Capture d'écran de l'interface Symfony avec le formulaire](img/Formulaire.gif)
+- ![Capture d'écran côté DB](img/screendb.png)
 
 ## Auteur
 
-Ce projet a été réalisé par [Votre Nom](https://github.com/votre-utilisateur).
+Ce projet a été réalisé par [DUFOUR THEO](https://github.com/dufourtheo).
 
 ## Licence
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est en lien avec Hackcess
