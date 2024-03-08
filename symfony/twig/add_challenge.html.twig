@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{}}">
+    <link rel="stylesheet" href="{{}}">
+</head>
+<body>
+ <div class="form-group">
+        <label for="selectedImage">Sélectionner une image :</label>
+        <select id="selectedImage" name="selectedImage" class="form-control">
+            <option value="">Choisissez une image</option>
+            {% for imageName in image_choices %}
+                <option value="{{ imageName }}">{{ imageName }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="{{ form.selectedImage.vars.id }}">L'image a utilise :</label>
+        {{ form_widget(form.selectedImage, {'attr': {'class': 'form-control'}}) }}
+        {{ form_errors(form.selectedImage) }}
+    </div>
+
+
+<script>
+    document.getElementById("selectedImage").addEventListener("change", function() {
+        var selectedImage = this.value;
+        document.getElementById("add_challenge_type_form_selectedImage").value = selectedImage;
+    });
+</script>
+</body>
+</html>
