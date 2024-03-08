@@ -1,5 +1,4 @@
 
-remote_theme: jekyll-theme-minimal
 
 # Projet SAE R502 - Automatisation de Tâches
 
