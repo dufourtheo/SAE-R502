@@ -32,8 +32,6 @@ docker run -d -p 8080:8080 mon-api
 ```
 
 
-3. Visiter http://localhost:8000 dans votre navigateur pour accéder à l'interface et utiliser le formulaire pour insérer le nom de l'image associée au challenge.
-
 ## Captures d'écran
 
 - ![Capture d'écran de l'interface Symfony avec le formulaire](img/Formulaire.gif)
