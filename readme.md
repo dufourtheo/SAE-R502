@@ -31,14 +31,8 @@ docker build -t mon-api .
 docker run -d -p 8080:8080 mon-api
 ```
 
-3. Accéder à l'interface Web Symfony :
 
-```
-cd projet-sae-r502/symfony
-symfony server:start -d
-```
-
-4. Visiter http://localhost:8000 dans votre navigateur pour accéder à l'interface et utiliser le formulaire pour insérer le nom de l'image associée au challenge.
+3. Visiter http://localhost:8000 dans votre navigateur pour accéder à l'interface et utiliser le formulaire pour insérer le nom de l'image associée au challenge.
 
 ## Captures d'écran
 
