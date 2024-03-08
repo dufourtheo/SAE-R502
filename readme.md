@@ -1,3 +1,6 @@
+
+remote_theme: jekyll-theme-minimal
+
 # Projet SAE R502 - Automatisation de Tâches
 
 Ce projet vise à automatiser certaines tâches liées à la gestion des conteneurs Docker sur une machine VPS distante pour le Site d'apprentissage en ligne dédié à la cybersécurité ERREUR502. L'objectif principal est de récupérer le nombre d'images Docker disponibles sur un autre VPS.
