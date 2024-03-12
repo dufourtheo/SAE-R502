@@ -6,14 +6,14 @@ class MainController extends AbstractController
     public function createChallenge(Request $request): Response
     {
         // Connexion SSH
-        $ssh = new SSH2('83.150.217.145', 2222);
-        if (!$ssh->login('successful', 'wcQLTtpZfldJ06')) {
+        $ssh = new SSH2('127.0.0.1', 2222);
+        if (!$ssh->login('user', 'password')) {
             $this->addFlash('error', 'Échec de connexion SSH');
             return $this->redirectToRoute('admin_index');
         }
 
         // Exécuter la commande cURL pour obtenir les noms des images Docker
-        $curlCommand = 'curl -s -X GET http://83.150.217.145:5000/images';
+        $curlCommand = 'curl -s -X GET http://127.0.0.1:5000/images';
         $imagesCommandOutput = $ssh->exec($curlCommand);
 
         // Vérifier et traiter la réponse JSON
