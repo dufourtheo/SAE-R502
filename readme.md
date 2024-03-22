@@ -26,14 +26,6 @@ Ce dépôt GitHub contient l'ensemble du projet, comprenant l'API, les fichiers 
 git clone https://github.com/dufourtheo/SAE-R502.git
 ```
 
-2. Construire et lancer le conteneur Docker de l'API :
-
-```
-cd projet-sae-r502/api
-docker build -t mon-api .
-docker run -d -p 8080:8080 mon-api
-```
-
 
 ## Captures d'écran
 
